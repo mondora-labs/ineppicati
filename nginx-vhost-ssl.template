@@ -8,7 +8,7 @@ server {
     listen 443;
     ssl on;
     ssl_certificate /etc/nginx/certs/{{domain}}.crt;
-    ssl_certificate_key /etc/nginx/cert/{{domain}}.key;
+    ssl_certificate_key /etc/nginx/certs/{{domain}}.key;
     server_name {{domain}};
     access_log /var/log/nginx/{{domain}}.log;
     # The following config passes the request to the meteor
